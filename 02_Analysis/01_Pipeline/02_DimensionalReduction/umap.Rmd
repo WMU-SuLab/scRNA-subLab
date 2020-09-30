@@ -1,5 +1,5 @@
 ---
-title: "R Notebook"
+title: Dimensional Reduction
 output: html_notebook
 ---
 
