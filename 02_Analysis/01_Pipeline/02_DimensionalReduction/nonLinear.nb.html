@@ -226,9 +226,27 @@ summary {
 
 
 <!-- rnb-text-begin -->
-<p>非线性降维</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p><strong>Seurat:</strong></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V1cmF0T0ogPSBSdW5VTUFQKHNldXJhdE9KLHVtYXAubWV0aG9kPSd1d290JylcblxuYGBgIn0= -->
+<pre class="r"><code>seuratOJ = RunUMAP(seuratOJ,umap.method='uwot')
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiMTc6MTk6MzIgVU1BUCBlbWJlZGRpbmcgcGFyYW1ldGVycyBhID0gMC45OTIyIGIgPSAxLjExMlxuMTc6MTk6MzIgUmVhZCA1NTE4NiByb3dzIGFuZCBmb3VuZCA1NjEgbnVtZXJpYyBjb2x1bW5zXG4xNzoxOTozMiBVc2luZyBBbm5veSBmb3IgbmVpZ2hib3Igc2VhcmNoLCBuX25laWdoYm9ycyA9IDMwXG4xNzoxOTozMiBCdWlsZGluZyBBbm5veSBpbmRleCB3aXRoIG1ldHJpYyA9IGNvc2luZSwgbl90cmVlcyA9IDUwXG4wJSAgIDEwICAgMjAgICAzMCAgIDQwICAgNTAgICA2MCAgIDcwICAgODAgICA5MCAgIDEwMCVcblstLS0tfC0tLS18LS0tLXwtLS0tfC0tLS18LS0tLXwtLS0tfC0tLS18LS0tLXwtLS0tfFxuRXJyb3IgaW4gYW5uJGFkZEl0ZW0oaSAtIDEsIFhbaSwgXSkgOiBcbiAgTm90IGNvbXBhdGlibGUgd2l0aCByZXF1ZXN0ZWQgdHlwZTogW3R5cGU9UzQ7IHRhcmdldD1kb3VibGVdLlxuIn0= -->
+<pre><code>17:19:32 UMAP embedding parameters a = 0.9922 b = 1.112
+17:19:32 Read 55186 rows and found 561 numeric columns
+17:19:32 Using Annoy for neighbor search, n_neighbors = 30
+17:19:32 Building Annoy index with metric = cosine, n_trees = 50
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+Error in ann$addItem(i - 1, X[i, ]) : 
+  Not compatible with requested type: [type=S4; target=double].</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
@@ -236,7 +254,7 @@ summary {
 <p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIm5vbiBMaW5lYXIgRGltZW5zaW9uYWwgUmVkdWN0aW9uIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0K6Z2e57q/5oCn6ZmN57u0DQoNCg0KYGBge3J9DQoNCmBgYA0KDQpBZGQgYSBuZXcgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpJbnNlcnQgQ2h1bmsqIGJ1dHRvbiBvbiB0aGUgdG9vbGJhciBvciBieSBwcmVzc2luZyAqQ3RybCtBbHQrSSouDQoNCldoZW4geW91IHNhdmUgdGhlIG5vdGVib29rLCBhbiBIVE1MIGZpbGUgY29udGFpbmluZyB0aGUgY29kZSBhbmQgb3V0cHV0IHdpbGwgYmUgc2F2ZWQgYWxvbmdzaWRlIGl0IChjbGljayB0aGUgKlByZXZpZXcqIGJ1dHRvbiBvciBwcmVzcyAqQ3RybCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLg0KDQpUaGUgcHJldmlldyBzaG93cyB5b3UgYSByZW5kZXJlZCBIVE1MIGNvcHkgb2YgdGhlIGNvbnRlbnRzIG9mIHRoZSBlZGl0b3IuIENvbnNlcXVlbnRseSwgdW5saWtlICpLbml0KiwgKlByZXZpZXcqIGRvZXMgbm90IHJ1biBhbnkgUiBjb2RlIGNodW5rcy4gSW5zdGVhZCwgdGhlIG91dHB1dCBvZiB0aGUgY2h1bmsgd2hlbiBpdCB3YXMgbGFzdCBydW4gaW4gdGhlIGVkaXRvciBpcyBkaXNwbGF5ZWQuDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIm5vbiBMaW5lYXIgRGltZW5zaW9uYWwgUmVkdWN0aW9uIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KYGBge3J9DQpkYXRhID0gcmVhZFJEUygnLi4vLi4vLi4vZGF0YVNldC9saS5yZHMnKQ0KY2VsbFR5cGVzID0gc2FwcGx5KGNvbG5hbWVzKGRhdGEpLCBmdW5jdGlvbih4KSBzdHJzcGxpdCh4LHNwbGl0PSdfXycpW1sxXV1bM10pDQpgYGANCg0KDQoNCg0KKipTZXVyYXQ6KioNCmBgYHtyfQ0KbGlicmFyeShTZXVyYXQpDQpzZXVyYXRPSiA9IENyZWF0ZUFzc2F5T2JqZWN0KGRhdGEpDQpzZXVyYXRPSiA9IFJ1blVNQVAoc2V1cmF0T0osdW1hcC5tZXRob2Q9J3V3b3QnKQ0KYGBgDQoNCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDdHJsK0FsdCtJKi4NCg0KV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDdHJsK1NoaWZ0K0sqIHRvIHByZXZpZXcgdGhlIEhUTUwgZmlsZSkuDQoNClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4NCg==</div>
 
 
 
