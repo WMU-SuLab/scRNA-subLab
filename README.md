@@ -1,4 +1,4 @@
-<div align=left><img width="550" height="280" src="https://github.com/sulab-wmu/scRNA-subLab/blob/master/pic/scRNA-sulab.png"/> </div>
+<div align=left><img width="450" height="220" src="https://github.com/sulab-wmu/scRNA-subLab/blob/master/pic/scRNA-sulab.png"/> </div>
 <hr/>
 scRNA techniques, analysis pipelines, and widely-used R/Python packages
 
